@@ -1,0 +1,92 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{ucs}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{hyperref}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\theoremstyle {definition} \newtheorem {defi} {Définition} [section]
+\newtheorem{ex}{Exemple}[section]
+\theoremstyle{plain} \newtheorem {theo} {Théorème}[section]
+\newtheorem {coro}[theo]{Corollaire}
+\newtheorem{prop}{Proposition}[section]
+\newtheorem {lem} {Lemme}[section]
+\theoremstyle{remark} \newtheorem*{note}{Remarque}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\SL}{SL}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{pgf, tikz} %pour les graphes
+\usepackage[margin=15mm]{geometry}
+\usetikzlibrary{3d,calc}
+\usetikzlibrary{trees}
+%\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+%\usepackage{float}
+%\usepackage{ulem}
+%\usepackage[all]{xy}
+\usepackage{hyperref}
+\usepackage{upquote}
+\newcommand{\egale}[1]{%
+\ensuremath{\stackrel{#1}{=}}} % pour ecrire au dessus du égal
+\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
+\newcommand{\ii}{\text{i}}
+
+\title{Site internet}
+\author{Emeline LUIRARD}
+
+\begin{document}
+
+\maketitle	
+Pour accéder via une connexion internet à son espace personnel, on utilise ssh avec le shell:
+\begin{verbatim}
+ssh <login>@ssh.eleves.ens-rennes.fr
+\end{verbatim}
+
+où \verb|<login>| est l'identifiant ENS: \verb|eluir933| par exemple.
+Il est ensuite demandé un mot de passe: c'est celui qu'on utilise pour se connecter à l'ENS. 
+Ensuite dans le terminal on a \verb|eluir933@darwin:~\$ | ce qui veut dire qu'on est sur notre dossier.
+
+Pour copier un document: se placer dans le répertoire courant où est ce document
+\begin{verbatim}
+	scp document <login>@ssh.eleves.ens-rennes.fr:
+\end{verbatim} permet de copier \verb|document| vers son espace perso. 
+On peut préciser un emplacement de destination comme cela:
+\begin{verbatim}
+scp exercice.pdf eluir933@ssh.eleves.ens-rennes.fr:public_html/Fichiers_pdf/
+\end{verbatim}
+Pour copier tout un dossier, il faut utiliser l'option \verb|-r|:
+\begin{verbatim}
+	scp -r Documents_pdf/ eluir933@ssh.eleves.ens-rennes.fr:public_html/
+\end{verbatim}
+
+Maintenant place aux commandes du shell pour se débrouiller:
+
+\verb|ls|: permet de lister les fichiers et les sous-dossiers.
+\\ 
+\verb|cd public_html| permet d'aller dans le dossier \verb|public_html| qu'on voit dans en ayant fait \verb|ls|.
+\\ Pour remonter d'un répertoire: \verb|cd ..|  attention à ne pas oublier l'espace.
+\\
+Pour copier: \verb|cp|
+Pour supprimer : \verb|rm|  (attention c'est irrémédiable !)
+\begin{verbatim}
+rm -i Agregation.html 
+\end{verbatim}
+pour supprimer le fichier \verb|Agregation.html| dans le dossier courant. Il demande confirmation avec \verb|-i|.
+Le reste ici :\url{https://doc.ubuntu-fr.org/tutoriel/console_ligne_de_commande}
+
+ Pour récupérer le dossier \verb|public_html| dans le répertoire courant du terminal(de notre ordinateur à nous), écrire dans un nouveau terminal :
+ \begin{verbatim}
+ scp -r eluir933@ssh.eleves.ens-rennes.fr:~/public\_html /home/emeline/Documents
+ \end{verbatim}
+ Pour créer un dossier dans le répertoire courant 
+ \begin{verbatim}
+ mkdir nouveaudossier
+ \end{verbatim}
+%$scp -r eluir933@ssh.eleves.ens-rennes.fr:~/public\_html/ ~/$
+
+Il est demandé le mdp de l'ordinateur distant.
+\end{document}
