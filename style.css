@@ -1,0 +1,487 @@
+
+
+/*@media (max-device-width:768px) and (orientation: landscape) {
+  html {
+   -webkit-text-size-adjust: 100%;
+   -ms-text-size-adjust: 100%;
+  }
+}*/
+
+/********** EN TETE et MENU *********/
+#topsection /* pour les autres pages*/
+{
+  display: flex;
+  justify-content: flex-start;
+  /*align-items: center;*/
+
+}
+
+header
+{
+  display:flex; /* Le voir comme une flexbox*/
+  flex-direction: column; /* menu en dessous du titre*/
+
+}
+header h1
+{
+  /*display: inline-block;  Ecrire le titre sur 2 lignes */
+  margin:auto; /* pour centrer h1 dans header */
+  border-bottom: 3px #00796B/*#EB8B05*/ double;
+  border-radius: 7px; /* Arrondir les angles */
+}
+
+#menu
+{
+  display: flex;
+  list-style-type: none; /*retirer les puces */
+  text-transform: uppercase; /* texte écrit en majuscules */
+  font-size: 1.3em;
+
+}
+#menu li 
+{
+  margin-right: 3%; /*espacer les titres du menu */
+  list-style-type: none; /* retirer les puces du menu déroulant */
+}
+#menu a 
+{
+  padding-bottom: 3px;
+
+}
+#menu li.page_courante
+{
+  border-bottom: 3px #d08770 solid; /* souligner la page courante*/
+
+}
+#menu li ul /* menu déroulant */
+{
+  display: none;
+  position:absolute;
+  border:#588e88 dashed 3px;
+  border-top: none;
+  border-right: none;
+  border-radius: 7px;
+  background-color:#d8d2a4; /* #9AB6C2; /*  #F5D95D F2DE85 */
+  padding-left: 0px;
+  text-transform: none;
+  min-width: 200px;
+
+}
+
+#menu li:hover ul {
+ display:block;
+ }
+#menu li:hover ul li {
+ float:none;
+ }
+header nav
+  {
+    margin:auto;
+  }
+/*****************************/
+
+/********GENERAL**************/
+article, section
+{
+  margin-top: 5%;
+
+}
+a /* Liens par défaut (non survolés) */
+{
+   text-decoration: none;
+   color: #ad4c3c;
+}
+
+a:hover /* Apparence au survol des liens */
+{
+   text-decoration: none;
+}
+
+a:active /* Quand le visiteur clique sur le lien */
+{
+   text-decoration: none;
+   background-color: #d08770; 
+}
+
+a:visited /* Quand le visiteur a déjà vu la page concernée */
+{
+   text-decoration: none;
+   color: #ad4c3c;
+
+}
+#bloc_page
+{ 
+  max-width:90%;
+  margin:auto;
+ }
+
+body
+
+{   
+    position: relative;
+    background-color: #d8d2a4;/*#C1B7AA;*/
+    /*background: url(fond3.png) no-repeat center fixed;
+    background-size: cover;*/  
+    font-family: 'Comic Sans MS','Trebuchet MS';
+    -webkit-background-size:cover; /* pour anciens chrome et safari */
+    word-wrap: break-word;
+}
+figure
+{
+  display: flex;
+
+  max-width: 60%;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+img.scaled
+{
+  max-width: 100%;
+  margin-left:3%;
+}
+
+h1
+{
+  color: #00796B; /*#306754;/*#EB8B05;*/
+  font-size: 1.6em;
+  font-weight: bold;
+  text-align: center;
+
+  
+
+  margin:auto;
+
+}
+article h1, article h2, article h3
+{
+  text-align: left;
+}
+h2
+{
+  color: #00796B;
+  margin: auto;
+  font-size: 1.3em;
+}
+h3
+{
+  color:#00796B;
+  margin: auto;
+  font-size: 1.1em;
+  margin-top: 1%;
+}
+
+
+
+
+html {
+  height: auto;
+}
+
+
+
+p
+
+{
+  color: black;
+  font-size: 1em;
+  font-family: 'Comic Sans MS','Trebuchet MS';
+  text-align: justify;
+  max-width: 75%;
+  word-wrap: break-word; /* césure forcée si le texte risque de dépasser, typiquement pour les url */
+}
+ul
+{
+  list-style-type: circle;
+  text-align: left;
+
+}
+/****************************/
+
+/*******PAGE ACCUEIL*********/
+#homepage
+{
+  display: flex; /* conteneur flexbox*/
+  justify-content: space-around; /*position horizontale de l'aside et article*/
+}
+#homepage1
+{
+  display: block;
+  /*max-width: 65%; */
+}
+aside /* aparté Qui suis-je*/
+ {
+  text-align: justify;
+  
+  /*
+  width: 50%;
+  /*background-color: #F0B184;*/
+  font-size: 0.9em;
+  font-family: 'Comic Sans MS','Trebuchet MS';
+  /*padding: 5px;*/
+  border-radius: 10px;
+  border:#588e88 dashed 3px;
+  margin-left: 5%;
+  margin-right: 10px;
+  /*float: right;*/
+   
+  max-width: 20%;
+ }
+
+aside h1
+{
+  color:#00796B;
+  border-bottom: 3px #00796B dotted;
+
+}
+aside p
+{
+  margin: auto;
+  margin-top: 10px;
+
+}
+/**************************/
+/******CAS PARTICULIERS****/
+#recherche
+{
+  display: flex;
+  
+}
+
+#recherche article
+{
+  max-width: 50%;
+  /*margin: auto;*/  /* à remettre quand je mettrai une deuxième colonne */
+}
+/**************************/
+/*****PIED DE PAGE*********/
+footer 
+ {
+  display: flex;
+  /*float: left;*/
+  margin-top:1%;
+  /*margin-bottom: 2%;*/
+  width: 50%;
+
+ }
+/*footer p
+{
+  width: 100%; valeur par défaut
+}*/
+/*************************/
+/***BANNIERE IMAGE*******/
+#banniere
+{   align-self: flex-end;
+    margin-top: 7em;
+    margin-bottom: 0;
+    height: 200px;
+    /*border-radius: 5px;*/
+    background: url('banniere2.JPG') no-repeat center; /* penser à changer la position en fonction de l'image.*/
+    background-size : cover;
+    border-radius: 5px;
+
+    /*position: relative;*/
+}
+#banniere_enseignement
+{   align-self: flex-end;
+    margin-top: 7em;
+    margin-bottom: 0;
+    height: 250px; 
+    /*border-radius: 5px;*/
+    background: url('IMG_81911.jpg') no-repeat left; /* penser à changer la position en fonction de l'image.*/
+    background-size : cover;
+    border-radius: 5px;
+
+    /*position: relative;*/
+}
+#banniere_recherche
+{   align-self: flex-end;
+    margin-top: 7em;
+    margin-bottom: 0;
+    height: 350px; 
+    /*border-radius: 5px;*/
+    background: url('IMG_9045.JPG') no-repeat left; /* penser à changer la position en fonction de l'image.*/
+    background-size : cover;
+    border-radius: 5px;
+
+    /*position: relative;*/
+}
+#banniere_liens
+{   align-self: flex-end;
+    margin-top: 7em;
+    margin-bottom: 0;
+    height: 350px; 
+    /*border-radius: 5px;*/
+    background: url('IMG_9454.JPG') no-repeat center; /* penser à changer la position en fonction de l'image.*/
+    background-size : cover;
+    border-radius: 5px;
+
+    /*position: relative;*/
+}
+
+.legende
+{
+  text-align: right;
+  max-width: 100%;
+  margin-top: -5px;
+}
+/************************/
+
+
+  
+  
+/*****VERSION MOBILE*****/
+@media only screen and (max-width : 655px) {   
+  /* pour Ã©crire version mobile au dessus du reste*/
+  body:before {
+    content: "Version mobile";  
+    display: block;
+    text-align: center;
+    font-style: italic;
+    color: #ad4c3c;
+  }
+  * {
+    box-sizing: border-box;
+  }
+
+/********** EN TETE et MENU *********/
+#topsection /* pour les autres pages*/
+{
+  flex-direction: column;
+  margin-bottom: 7em; /* pour pas que le menu se superpose au texte principal */
+}
+#menu
+  {
+    flex-wrap: wrap; /* écrire le menu sur plusieurs lignes */
+    padding: 0;
+    justify-content: space-around; /* centrer horizontalement le menu */
+
+    /*flex-direction: column;
+    align-items: flex-start;
+    float: left;
+    width: 135px;*/
+  }
+ 
+  #menu li 
+  {
+
+    position: relative;
+
+  }
+  #menu li ul
+  {
+    display: inline-block;
+    top: 1.2em;
+    /*left: 135px;*/
+    left:13px; /* pour pas que le menu deroule superpose le lien*/
+
+  }
+
+/*****************************/
+
+/********GENERAL**************/
+  body {
+    width: 95%;
+    margin: 0;
+    padding: 0;
+  }
+  img, table, td, blockquote,code,pre,textarea,input,iframe,object,embed,video {
+    max-width: 100%;
+  }
+  img {
+    height: auto;
+  }
+  textarea, table,td,th,code,pre,samp {
+    -webkit-hyphens: auto; /* cÃ©sure propre */
+    -moz-hyphens: auto;
+    hyphens: auto;
+    word-wrap: break-word; /* passage Ã  la ligne forcÃ© */
+  }
+  code, pre, samp {
+    white-space: pre-wrap; /* passage Ã  la ligne spÃ©cifique pour les Ã©lÃ©ments Ã  chÃ¢sse fixe */
+  }
+
+  p
+ {
+  max-width: 95%;
+ }
+ figure
+{
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+img.scaled
+{
+  max-width: 100%;
+  margin-top:3%;
+  height: auto;
+}
+/****************************/
+
+/*******PAGE ACCUEIL*********/
+  
+  
+  #homepage
+  {
+    flex-direction: column;
+  }
+  aside, #homepage1
+  {
+    float: none;
+    min-width: 90%;
+  }
+#homepage1{
+  margin-top: 5em; /* pour pas que le menu se superpose au texte principal */
+}
+aside p 
+ {
+  margin: auto;
+ }
+
+/**************************/
+/*****PIED DE PAGE*********/
+  footer 
+ {
+  float: left;
+  min-width: 100%;
+ }
+
+ 
+ 
+
+/**************************/
+/******CAS PARTICULIERS****/
+#recherche article
+{
+  max-width: 100%;
+  /*margin: auto;*/  /* à remettre quand je mettrai une deuxième colonne */
+}
+/************************/
+/***BANNIERE IMAGE*******/
+#banniere
+{   
+    height: 150px;
+    
+}
+#banniere_enseignement
+{   
+    height: 150px; 
+    
+}
+#banniere_recherche
+{   
+    height: 150px; 
+    
+}
+#banniere_liens
+{   
+    height: 150px; 
+    
+}
+} 
