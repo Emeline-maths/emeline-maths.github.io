@@ -252,7 +252,41 @@ aside p
 #recherche article
 {
   max-width: 50%;
-  /*margin: auto;*/  /* à remettre quand je mettrai une deuxième colonne */
+  margin-left: 20px;
+  text-align: justify;
+  /*margin: auto;   à remettre peut être quand je mettrai une deuxième colonne */
+}
+#recherche h2
+{
+  font-size: 1.45em;
+}
+#recherche h3
+{
+  text-indent:1.1em;
+  margin-top: 2%;
+  margin-bottom: -2%;
+}
+#recherche p
+{
+  text-indent: 1.1em;
+  max-width: 90%;
+}
+#publications
+{
+  border-left: 3px #00796B double;
+  padding-left:5%;
+
+}
+
+.abstract
+{
+  font-style: oblique;
+  font-size: 0.9em;
+  color: #383838;
+}
+.article_title
+{
+  text-indent: 30%;
 }
 /**************************/
 /*****PIED DE PAGE*********/
