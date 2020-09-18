@@ -7,32 +7,53 @@
   }
 }*/
 
+:root
+{
+  --fond-jaune:#d8d2a4 ;
+  --bordure-verte:#00796B;
+  --souligne-orange: #d08770;
+  --liens: #ad4c3c;
+
+  
+}
 /********** EN TETE et MENU *********/
 #topsection /* pour les autres pages*/
 {
   display: flex;
   justify-content: flex-start;
+  margin: auto;
+  margin-bottom: 100px;
   /*align-items: center;*/
 
 }
+
 
 header
 {
   display:flex; /* Le voir comme une flexbox*/
   flex-direction: column; /* menu en dessous du titre*/
-
+  margin: auto;
+  /* margin-left: initial; */
+  margin-bottom: 100px;
 }
 header h1
 {
   /*display: inline-block;  Ecrire le titre sur 2 lignes */
   margin:auto; /* pour centrer h1 dans header */
-  border-bottom: 3px #00796B/*#EB8B05*/ double;
-  border-radius: 7px; /* Arrondir les angles */
+  border-bottom: 3px var(--bordure-verte) /*#EB8B05*/ double;
+  /*border-radius: 7px; /* Arrondir les angles */
+  
+}
+
+#topsection header h1
+{
+  margin-right: 20px;
 }
 
 #menu
 {
   display: flex;
+  justify-content: center;
   list-style-type: none; /*retirer les puces */
   text-transform: uppercase; /* texte écrit en majuscules */
   font-size: 1.3em;
@@ -50,7 +71,7 @@ header h1
 }
 #menu li.page_courante
 {
-  border-bottom: 3px #d08770 solid; /* souligner la page courante*/
+  border-bottom: 3px var(--souligne-orange) solid; /* souligner la page courante*/
 
 }
 #menu li ul /* menu déroulant */
@@ -61,7 +82,7 @@ header h1
   border-top: none;
   border-right: none;
   border-radius: 7px;
-  background-color:#d8d2a4; /* #9AB6C2; /*  #F5D95D F2DE85 */
+  /*background-color:#d8d2a4; /* #9AB6C2; /*  #F5D95D F2DE85 */
   padding-left: 0px;
   text-transform: none;
   min-width: 200px;
@@ -76,20 +97,20 @@ header h1
  }
 header nav
   {
-    margin:auto;
+    /* margin:auto; */
   }
 /*****************************/
 
 /********GENERAL**************/
 article, section
 {
-  margin-top: 5%;
-
+  width: 85%;
+  margin: auto;
 }
 a /* Liens par défaut (non survolés) */
 {
    text-decoration: none;
-   color: #ad4c3c;
+   color: var(--liens);
 }
 
 a:hover /* Apparence au survol des liens */
@@ -106,12 +127,12 @@ a:active /* Quand le visiteur clique sur le lien */
 a:visited /* Quand le visiteur a déjà vu la page concernée */
 {
    text-decoration: none;
-   color: #ad4c3c;
+   color: var(--liens);
 
 }
 #bloc_page
 { 
-  max-width:90%;
+  max-width:80%;
   margin:auto;
  }
 
@@ -119,7 +140,7 @@ body
 
 {   
     position: relative;
-    background-color: #d8d2a4;/*#C1B7AA;*/
+    /*background-color: #d8d2a4;/*#C1B7AA;*/
     /*background: url(fond3.png) no-repeat center fixed;
     background-size: cover;*/  
     font-family: 'Comic Sans MS','Trebuchet MS';
@@ -144,13 +165,10 @@ img.scaled
 
 h1
 {
-  color: #00796B; /*#306754;/*#EB8B05;*/
+  color:var(--bordure-verte); /*#306754;/*#EB8B05;*/
   font-size: 1.6em;
   font-weight: bold;
   text-align: center;
-
-  
-
   margin:auto;
 
 }
@@ -160,13 +178,13 @@ article h1, article h2, article h3
 }
 h2
 {
-  color: #00796B;
+  color:var(--bordure-verte);
   margin: auto;
   font-size: 1.3em;
 }
 h3
 {
-  color:#00796B;
+  color:var(--bordure-verte);
   margin: auto;
   font-size: 1.1em;
   margin-top: 1%;
@@ -188,7 +206,7 @@ p
   font-size: 1em;
   font-family: 'Comic Sans MS','Trebuchet MS';
   text-align: justify;
-  max-width: 75%;
+  max-width: 100%;
   word-wrap: break-word; /* césure forcée si le texte risque de dépasser, typiquement pour les url */
 }
 ul
@@ -202,6 +220,7 @@ ul
 /*******PAGE ACCUEIL*********/
 #homepage
 {
+  margin-top: 5%;
   display: flex; /* conteneur flexbox*/
   justify-content: space-around; /*position horizontale de l'aside et article*/
 }
@@ -223,7 +242,7 @@ aside /* aparté Qui suis-je*/
   border-radius: 10px;
   border:#588e88 dashed 3px;
   margin-left: 5%;
-  margin-right: 10px;
+  /* margin-right: 10px; */
   /*float: right;*/
    
   max-width: 20%;
@@ -231,14 +250,16 @@ aside /* aparté Qui suis-je*/
 
 aside h1
 {
-  color:#00796B;
-  border-bottom: 3px #00796B dotted;
+  color:var(--bordure-verte);
+  border-bottom: 3px var(--bordure-verte) dotted;
 
 }
 aside p
 {
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 75%;
 
 }
 /**************************/
@@ -273,9 +294,15 @@ aside p
 }
 #publications
 {
-  border-left: 3px #00796B double;
+  /* border-left: 3px #00796B double; */
   padding-left:5%;
+  margin-top: initial;
 
+}
+
+#Stage
+{
+  border-right: 3px var(--bordure-verte) double;
 }
 
 .abstract
@@ -358,8 +385,10 @@ footer
 {
   text-align: right;
   max-width: 100%;
-  margin-top: -5px;
+  /*margin-top: -5px;*/
 }
+
+
 /************************/
 
 
