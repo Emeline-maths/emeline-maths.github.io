@@ -4,8 +4,10 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript"
-     src="https://d3eoax9i5htok0.cloudfront.net/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    <!-- Pour écrire en latex -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
   </script>
 
 
@@ -42,25 +44,24 @@
 
       <article>
         <section>
-        <p>Vous trouverez sur cette page tous les documents que j'ai rédigés pour l'agrégation au cours de l'année 2017/2018, avec notamment <a href="#lecons">les plans de leçons</a> et <a href="#developpements">les développements</a>. En fin de page se trouve une partie consacrée à la <a href="#Modélisation">modélisation</a>. </p>
-        <p> Pour préparer l'agrégation, nous nous sommes servis des <a href="Liens.html">pages personnelles d'anciens élèves</a>. Ceci nous fut bien utile pour commencer, afin de savoir comment construire une leçon.
-        <br /> J'ai décrit <a href="annee_agreg.html">ici</a> comment s'est déroulée mon année d'agreg, comment j'ai travaillé etc. Si vous avez des questions, n'hésitez pas à me contacter !
-
-      </p>
-
+        <p>Vous trouverez sur cette page tous les documents que j'ai rédigés pour l'agrégation au cours de l'année 2017/2018, avec notamment <a href="#lecons">les plans de leçons</a> et <a href="#developpements">les développements</a>. En fin de page se trouve une partie consacrée à l'épreuve de <a href="#Modélisation">modélisation</a>. </p>
+        <p> 
+        J'ai décrit <a href="annee_agreg.html">ici</a> comment s'est déroulée mon année d'agreg, comment j'ai travaillé etc. Si vous avez des questions, n'hésitez pas à me contacter.
+        </p>
+        <p>
+          Attention, les documents mathématiques peuvent contenir des coquilles ou même des erreurs. N'hésitez pas à me contacter pour m'en faire part.
+        </p>        
       </section>
 
       <section>  
         <h2 id=lecons> Leçons </h2>
-        <p> Ci-dessous se trouvent les plans de leçons que Bérenger et moi avons rédigés pendant l'année. Attention, les plans sont personnels: j'entends par là que ce ne sont pas des plans idéaux (et encore moins parfaits) et que chacun est libre de supprimer ou de rajouter une partie, tant que le minimum requis s'y trouve ! Par exemple, Bérenger, avec qui j'ai fait tous mes plans, a une préférence pour les équations différentielles alors que je penche plus pour les probabilités, ainsi certains plans diffèrent selon si c'est lui qui les présentait ou non : il y avait soit un peu plus de probabilités, soit un peu plus d'équations différentielles ou d'analyse numérique.
-        <br />
-        Attention, certains plans ont été faits au tout début de l'année et seraient donc différents si nous les avions faits en fin d'année. Nous avons apporté des corrections au fil de l'année et pendant la dernière période avant les oraux, mais il reste probablement encore des erreurs et des corrections à apporter. N'hésitez pas à me les signaler.
+        <p> Les plans ci-dessous sont personnels, ils sont le fruit de ma vision des choses sur chaque thème. Soyez libres de vous en inspirer pour créer vos propres plans de leçons. La plupart des plans sont rédigés manuscitement, certains sont tapés en Latex. 
         <br /> Vous retrouverez la liste des références exactes <a href="Livres.pdf">ici</a>.
         </p>
 
-        <h3> Plans d'algèbre</h3>
-        <p> Ici se trouvent donc nos plans d'algèbre et voici également mon <a href="Lecons/memoire126.pdf">mémoire</a>, qui portait sur la leçon 126: Exemples d'équations diophantiennes. </p>
-        <p>(Versions Latex à venir)</p>
+
+        <h3> Plans d'algèbre et géométrie</h3>
+        <p> Voici mon <a href="Lecons/memoire126.pdf">mémoire de M2</a>, qui portait sur la leçon 126: Exemples d'équations diophantiennes. </p>
           <ul>
             <li><a href="Lecons/101.pdf">101: Groupe opérant sur un ensemble. Exemples et applications.</a>  </li>
             <li><a href="Lecons/102.pdf">102: Groupe des nombres complexes de module 1. Sous-groupes des racines de l'unité. Applications.</a>  </li>
@@ -102,9 +103,7 @@
           </ul>
         
 
-        <h3> Plans d'analyse</h3>
-        <p>Et ici, nos plans d'analyse.</p>
-        <p>(Versions Latex à venir)</p>
+        <h3> Plans d'analyse et probabilités</h3>
           <ul>
             <li><a href="Lecons/201.pdf">201: Espaces de fonctions; exemples et applications.</a>  </li>
             <li><a href="Lecons/202.pdf">202: Exemples de parties denses et applications.</a></li>
@@ -168,7 +167,7 @@
           <li><a href="Developpements/Frobenius.pdf">Décomposition de Frobenius</a>  </li>
           <li><a href="Developpements/Differentielle_du_determinant.pdf">Différentielle du déterminant et application au wronskien</a>  </li>
           <li><a href="Developpements/Dual_de_Mn.pdf">Dual de \( \mathcal{M}_n(\mathbb{K}) \)</a>  </li>
-          <li><a href="Developpements/Dual_et_bidual.pdf">Dual et le bidual d'un groupe</a>  </li>
+          <li><a href="Developpements/Dual_et_bidual.pdf">Dual et bidual d'un groupe</a>  </li>
           <li><a href="Developpements/John_Loewner.pdf">Ellispoïde de John Loewner</a>  </li>
           <li><a href="Developpements/Hill_Mathieu.pdf">Équation de Hill Mathieu</a>  </li>
           <li><a href="Developpements/Anneau_principal.pdf">Exemple d'anneau principal</a>  </li>
@@ -211,11 +210,14 @@
       </section>
       <section>
         <h2 id=Modélisation>Modélisation option Proba-Stats</h2>
-        <p>
-
-          Voici déjà le <a href="https://perso.univ-rennes1.fr/jean-christophe.breton/agreg/AGREG/TP/Survie.pdf"> Guide de survie</a>, où se trouvent les bases à savoir pour la partie programmation en Scilab de l'épreuve. <br /> 
-          J'ai aussi repris un <a href="https://6f63e1a0-a-62cb3a1a-s-sites.googlegroups.com/site/lauragaymath/agregation/Mod%C3%A9lisation%20-%20Programmes.pdf?attachauth=ANoY7cp2wVRrVodlYgzPBZauilVO8z1_NUoEqW1qyhoKV4tZiWtY6ronmyMwOQHEIgpVVdhZiVpPrPw1PbFxfbhUhFxMc0iF0NeqhRPeIR5Je86HuOiWGDZLdOTeSAthOyW0oh8Tk7cpcgabwLlPgcCv24WDVGc-BNvgGM7ORz7lE1AHmORBRvCrYwB6Yphumzn9XpC29P8sB-WdG9rcivC0fTUkke9067dRIXd3PEcT5m860n91K5P754BdOEVpJLbpxyuVdJ9b&attredirects=0">fichier de Laura</a>  afin de rassembler tout ce dont j'avais besoin pour la programmation. Le <a href="mode.pdf">voici</a>.  Ça aurait été le document parfait (pour moi !) à avoir sous les yeux si nous avions le droit à quelque chose pour l'épreuve. N'hésitez pas à me demander le fichier tex si vous souhaitez l'améliorer.
-        </p>
+        <ul>
+          <li>le <a href="https://perso.univ-rennes1.fr/jean-christophe.breton/agreg/AGREG/TP/Survie.pdf"> Guide de survie</a>, où se trouvent les bases à savoir pour la partie programmation en Scilab de l'épreuve.
+          </li>
+          <li>Un <a href="https://6f63e1a0-a-62cb3a1a-s-sites.googlegroups.com/site/lauragaymath/agregation/Mod%C3%A9lisation%20-%20Programmes.pdf?attachauth=ANoY7cp2wVRrVodlYgzPBZauilVO8z1_NUoEqW1qyhoKV4tZiWtY6ronmyMwOQHEIgpVVdhZiVpPrPw1PbFxfbhUhFxMc0iF0NeqhRPeIR5Je86HuOiWGDZLdOTeSAthOyW0oh8Tk7cpcgabwLlPgcCv24WDVGc-BNvgGM7ORz7lE1AHmORBRvCrYwB6Yphumzn9XpC29P8sB-WdG9rcivC0fTUkke9067dRIXd3PEcT5m860n91K5P754BdOEVpJLbpxyuVdJ9b&attredirects=0">fichier de Laura</a>, que j'ai modifié: <a href="mode.pdf">voici</a>. J'y ai rassemblé tout ce qui me semblait  bon à savoir pour programmer en Scilab. 
+          J'en ai fait une <a href="enseignements/TPagreg/Memo_Python.pdf">version en Python</a> pendant mes enseignements à la prépa agreg. N'hésitez pas à me demander le fichier tex si vous souhaitez l'améliorer.
+          </li>
+        </ul>
+        
       </section>
     </article>
 
