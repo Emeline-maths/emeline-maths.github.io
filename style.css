@@ -209,7 +209,7 @@ p
 {
   color: black;
   font-size: 1em;
-  font-family: 'Comic Sans MS','Trebuchet MS';
+  font-family:'Trebuchet MS';
   text-align: justify;
   max-width: 100%;
   word-wrap: break-word; /* césure forcée si le texte risque de dépasser, typiquement pour les url */
@@ -242,7 +242,7 @@ aside /* aparté Qui suis-je*/
   width: 50%;
   /*background-color: #F0B184;*/
   font-size: 0.9em;
-  font-family: 'Comic Sans MS','Trebuchet MS';
+  font-family: 'Trebuchet MS';
   /*padding: 5px;*/
   border-radius: 10px;
   border:#588e88 dashed 3px;
