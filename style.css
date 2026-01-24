@@ -438,6 +438,10 @@ footer
   * {
     box-sizing: border-box;
   }
+  article, section {
+  width: 100%;
+  margin: 1.5em auto;
+}
 
 /********** EN TETE et MENU *********/
 #topsection /* pour les autres pages*/
