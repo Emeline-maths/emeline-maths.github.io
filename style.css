@@ -453,8 +453,8 @@ header nav #menu {
   padding: 0;
 }
  header nav #menu li ul {
+  display: block !important;
   position: static !important;
-  display: block;
   border: none;
   margin-top: 0.3em;
 }
