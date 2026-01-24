@@ -548,11 +548,15 @@ aside p
 
 /**************************/
 /******CAS PARTICULIERS****/
+#recherche {
+  flex-direction: column; /*pour écrire sur une seule colonne */
+}
 #recherche article
 {
   max-width: 100%;
   /*margin: auto;*/  /* à remettre quand je mettrai une deuxième colonne */
 }
+
 /************************/
 /***BANNIERE IMAGE*******/
 #banniere
