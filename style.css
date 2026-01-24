@@ -447,9 +447,16 @@ footer
 }
 #menu
   {
-    flex-wrap: wrap; /* écrire le menu sur plusieurs lignes */
-    padding: 0;
-    justify-content: space-around; /* centrer horizontalement le menu */
+    flex-direction: column;     /* 👈 clé du problème */
+    align-items: center;
+    gap: 0.6em;    
+    flex-wrap: nowrap;
+
+    /*********** ancienne version
+    /* flex-wrap: wrap; /* écrire le menu sur plusieurs lignes */
+    /*padding: 0;
+    /*justify-content: space-around; /*centrer horizontalement le menu */
+   /**********
 
     /*flex-direction: column;
     align-items: flex-start;
@@ -465,10 +472,15 @@ footer
   }
   #menu li ul
   {
+
+  position: static;     /* 👈 essentiel */
+  border: none;
+  margin-top: 0.3em;
+  /*******ancienne version : 
     display: inline-block;
     top: 1.2em;
     /*left: 135px;*/
-    left:13px; /* pour pas que le menu deroule superpose le lien*/
+    /*left:13px; /* pour pas que le menu deroule superpose le lien*/
 
   }
 
