@@ -556,7 +556,11 @@ aside p
   max-width: 100%;
   /*margin: auto;*/  /* à remettre quand je mettrai une deuxième colonne */
 }
-
+#Stage
+{
+  border-right: none;
+  max-width: 100%;
+}
 /************************/
 /***BANNIERE IMAGE*******/
 #banniere
