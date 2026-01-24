@@ -429,7 +429,7 @@ footer
 @media only screen and (max-width : 655px) {   
   /* pour Ã©crire version mobile au dessus du reste*/
   body:before {
-    content: "Version mobile test";  
+    content: "Version mobile";  
     display: block;
     text-align: center;
     font-style: italic;
@@ -443,7 +443,7 @@ footer
 #topsection /* pour les autres pages*/
 {
   flex-direction: column;
-  margin-bottom: 7em; /* pour pas que le menu se superpose au texte principal */
+  margin-bottom: 1em; /* pour pas que le menu se superpose au texte principal */
 }
 header nav #menu {
   display: flex !important;
@@ -457,6 +457,7 @@ header nav #menu {
   position: static !important;
   border: none;
   margin-top: 0.3em;
+  text-align: center;
 }
 
  
