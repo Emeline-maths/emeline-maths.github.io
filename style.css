@@ -452,6 +452,9 @@ header nav #menu {
   flex-wrap: nowrap !important;
   padding: 0;
 }
+header nav #menu li {
+  text-align: center;
+}
  header nav #menu li ul {
   display: block !important;
   position: static !important;
